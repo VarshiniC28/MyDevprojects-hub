@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>School Management System</title>
+    <link th:href="@{https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css}" rel="stylesheet">
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" sty href="#home">School ERP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="navbar-links">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="erpDropdown" role="button" data-bs-toggle="dropdown">School ERP</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#elearning">E-learning</a></li>
+                        <li><a class="dropdown-item" href="#admission">Admission</a></li>
+                        <li><a class="dropdown-item" href="#examination">Examination</a></li>
+                        <li><a class="dropdown-item" href="#transport">Transport</a></li>
+                        <li><a class="dropdown-item" href="#services">Other Services</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item" id="login-nav"><a class="nav-link" th:href="@{/login}">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+    <div>
+        <h1 class="display-4 fw-bold">Welcome to School ERP</h1>
+        <p class="lead">Manage Students, Faculty, Admin seamlessly!</p>
+    </div>
+</section>
+
+<!-- Cards -->
+<section class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card shadow dashboard-card">
+                <img th:src="@{https://th.bing.com/th/id/OIP.yITH-dKsibIFmCEo5KVnyAHaHa?rs=1&pid=ImgDetMain}" class="card-img-top" alt="Admin">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Admin Panel</h5>
+                    <p class="card-text">Manage faculty, students, complaints.</p>
+                    <a th:href="@{/admin}" class="btn btn-primary">Go to Admin</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow dashboard-card">
+                <img th:src="@{https://th.bing.com/th/id/OIP.-_ulYPbW9Ku17BnMqXbcmgHaG_?rs=1&pid=ImgDetMain}" class="card-img-top" alt="Student">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Student Panel</h5>
+                    <p class="card-text">View attendance, upload assignments.</p>
+                    <a th:href="@{/student}" class="btn btn-warning">Go to Student</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow dashboard-card">
+                <img th:src="@{https://th.bing.com/th/id/OIP.3wLAEMkHKZeYV0ZNOzIFggHaGs?w=920&h=831&rs=1&pid=ImgDetMain}" class="card-img-top" alt="Faculty">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Faculty Panel</h5>
+                    <p class="card-text">Upload assignments, manage classes.</p>
+                    <a th:href="@{/faculty}" class="btn btn-success">Go to Faculty</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Other Sections -->
+<section id="elearning" class="container py-5"><h2 class="text-center">E-learning System</h2></section>
+<section id="admission" class="container py-5 bg-light"><h2 class="text-center">Online Admission</h2></section>
+<section id="examination" class="container py-5"><h2 class="text-center">Examination Management</h2></section>
+<section id="transport" class="container py-5 bg-light"><h2 class="text-center">Transport Management</h2></section>
+<section id="services" class="container py-5"><h2 class="text-center">Other Services</h2></section>
+
+<section id="dashboard" class="container py-5 bg-light">
+    <h2 class="text-center mb-4">School Specialities & Infrastructure</h2>
+    <div class="row text-center">
+        <div class="col-md-4"><p>🏫 Smart Classrooms</p></div>
+        <div class="col-md-4"><p>📚 Rich Library</p></div>
+        <div class="col-md-4"><p>🏸 Sports Facilities</p></div>
+        <div class="col-md-4"><p>🛌 Hostel Facilities</p></div>
+        <div class="col-md-4"><p>🚍 Transport System</p></div>
+        <div class="col-md-4"><p>💻 Computer Labs</p></div>
+    </div>
+</section>
+
+<section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h5>Get in Touch</h5>
+            <p><i class="bi bi-geo-alt-fill text-primary"></i> 123 School Road, Knowledge City, India</p>
+            <p><i class="bi bi-telephone-fill text-primary"></i> +91 98765 43210</p>
+            <p><i class="bi bi-envelope-fill text-primary"></i> info@schoolerp.com</p>
+        </div>
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Write your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="container py-5 bg-light">
+    <h2 class="text-center mb-4">About Us</h2>
+    <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <img src="https://th.bing.com/th/id/OIP.z0nQvXXxkqayZ1WqUEnWDgHaE8?rs=1&pid=ImgDetMain" class="img-fluid rounded shadow" alt="School Building">
+        </div>
+        <div class="col-md-6">
+            <p>Our School ERP System is a comprehensive solution designed to streamline administrative tasks, enhance student engagement, and empower faculty members. From admissions to assessments, and transport to attendance — we’ve covered it all under one unified platform.</p>
+            <p>Driven by modern technologies and user-friendly interfaces, our system ensures productivity, transparency, and convenience for everyone in the school ecosystem.</p>
+            <a href="#home" class="btn btn-outline-primary mt-3">Explore Features</a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-primary text-white text-center p-3 mt-5">
+    <small>&copy; 2025 School ERP System</small>
+</footer>
+
+<script th:src="@{https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>

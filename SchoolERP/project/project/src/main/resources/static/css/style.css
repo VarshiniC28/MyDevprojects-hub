@@ -1,0 +1,28 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+  background: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238') no-repeat center center/cover;
+  padding: 100px 0;
+}
+
+.dashboard-card {
+  transition: 0.4s;
+  border-radius: 1rem;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;	
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+footer {
+  font-size: 0.9rem;
+}
