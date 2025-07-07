@@ -33,9 +33,6 @@ This repository contains a collection of my personal and academic projects. It i
 
 ---
 
-
----
-
 This repository serves as a portfolio of my work and learning journey. Feel free to explore and use the code for learning purposes.
 
 
