@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Faculty - Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" th:href="@{/admin_dashboard}">Admin Panel</a>
+    <div class="d-flex">
+      <a class="btn btn-light me-2" href="#" th:href="@{/admin_dashboard}">
+        <i class="bi bi-arrow-left"></i> Dashboard
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container mt-5">
+  <h2 class="mb-4">Manage Faculty</h2>
+
+  <!-- Add Faculty Button -->
+  <button class="btn btn-success mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#addFacultyForm">
+    <i class="bi bi-plus-circle"></i> Add Faculty
+  </button>
+
+  <!-- Add Faculty Form -->
+  <div class="collapse mb-4" id="addFacultyForm">
+    <div class="card card-body">
+      <form th:action="@{/saveFaculty}" method="post">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" name="name" id="name" required>
+          </div>
+          <div class="col-md-6">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="email" id="email" required>
+          </div>
+          <div class="col-md-6">
+            <label for="department" class="form-label">Department</label>
+            <input type="text" class="form-control" name="department" id="department" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Faculty</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Faculty Table -->
+  <table class="table table-striped table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="faculty : ${facultyList}">
+        <td th:text="${faculty.id}">F101</td>
+        <td th:text="${faculty.name}">Anita Sharma</td>
+        <td th:text="${faculty.subject}">Mathematics</td>
+        <td th:text="${faculty.email}">anita@school.com</td>
+        <td>
+          <button class="btn btn-sm btn-warning" th:onclick="'window.location.href=\'/editFaculty/' + ${faculty.id} + '\''">Edit</button>
+          <button class="btn btn-sm btn-danger" th:onclick="'window.location.href=\'/deleteFaculty/' + ${faculty.id} + '\''">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

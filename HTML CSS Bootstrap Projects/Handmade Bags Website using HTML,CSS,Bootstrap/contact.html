@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="bg-main nav_section position-sticky top-0 z-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg py-2">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./logo.svg" alt="handmade bags" width="200px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto w-100  mb-2 mb-lg-0">
+                        <div class="row w-100">
+                            <div
+                                class="col-md-10 d-flex flex-lg-row flex-column justify-content-lg-end gap-3 justify-content-start align-items-lg-center align-items-start">
+                                <li class="nav-item">
+                                    <a class="nav-link"  href="./home.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./new.html">New</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Bags.html">Bags</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./backpack.html">Backpacks</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./cosmeticbags.html">Cosmetic bags</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Aboutus.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                                </li>
+                            </div>
+                            <div
+                                class="col-md-2 d-flex justify-content-lg-end align-items-lg-center align-items-start justify-content-start">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Hero Section  -->
+    <h2 class="text-center mb-5 p-2 bg-secondary-subtle">Contact us</h2>
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="card shadow-lg p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="question" class="form-label">Question:</label>
+                            <textarea class="form-control" id="question" rows="4" placeholder="Type your message" required></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="consent" required>
+                            <label class="form-check-label" for="consent">I consent to the processing of my personal data.</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success" req>Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Hero end section  -->
+
+    <!-- Footer section -->
+    <footer class="footer section mt-5 shadow-lg">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="social-icons ">
+                    <div class="d-flex justify-content-center align-items-center gap-5">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                </div>
+                <div class="a-links">
+                    <div class="d-flex justify-content-center align-items-center gap-5 mb-4">
+                        <a href="#">Shipping cost</a>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Terms and Condtions</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-secondary-subtle d-flex justify-content-center last-footer">
+                <p>A website created by Varshini C for assignment.</p>
+            </div>
+        </div>
+    </footer>
+     <!-- Footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <!-- Header -->
+     <!-- navbar -->
+    <header class=" bg-main nav_section position-sticky top-0 z-3" >
+     <nav class=" container-fluid navbar navbar-expand-lg bg-body-tertiary shadow">
+      <div class="container-fluid w-100">
+        <a class="navbar-brand" href="./home.html">
+          <img src="./logo.webp" alt="Ceramics">
+        </a>
+
+        <div class="d-flex align-items-center d-md-flex d-lg-none">
+        <a class="nav-link d-lg-block  me-3" href="#">
+          <i class="fa-solid fa-cart-shopping" style="color: #d37e7e;"></i>
+        </a>
+    
+        <button class="navbar-toggler order-2 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    
+        <div class="collapse navbar-collapse order-3" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div class="row w-100 d-flex ">
+              <div class="col-md-10 d-flex flex-lg-row flex-column justify-content-lg-end gap-3 justify-content-md-center align-items-lg-center align-items-start">
+                <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="./workshop.html">Workshop</a></li>
+                <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+    
+                <li class="nav-item d-none d-lg-block">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-cart-shopping" style="color: #d37e7e;"></i>
+                  </a>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    
+     <!-- Header end -->
+      
+       <!-- hero section -->
+       <section class="hero-section text-center d-flex align-items-center justify-content-center text-white" >
+        <div class="container w-100 ">
+            <div class="row justify-content-center align-items-center mx-auto w-100">
+                <div class="col-sm-12 col-12 col-md-6 ">
+                        <h1 class="fw-bolder hero-heading">Ceramics Studio</h1>
+                        <p class=" fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci massa, dapibus quis molestie sit amet, pharetra vitae dolor.</p>
+                        <button type="button" class="btn btn-danger px-4 py-2">Show more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- Best sellers section -->
+    <h2 class="text-center my-3 p-2 ">Best Sellers</h>
+
+      <section class="best-section my-5">
+        <div class="container">
+            <div class="row gap-4 gap-sm-0 justify-content-center">
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="text-center" style="width: 26rem;">
+                        <a href=""><img src="./ceramics_2.webp" class="img-fluid" alt="Sara Mug"></a>
+                        <div class="p-2">
+                            <h5 class="mb-1">Sara Mug</h5>
+                            <p class="fw-bold">20 USD</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="text-center" style="width: 26rem;">
+                        <a href=""><img src="./ceramics_2.webp" class="img-fluid" alt="Moon Plate"></a>
+                        <div class="p-2">
+                            <h5 class="mb-1">Moon Plate</h5>
+                            <p class="fw-bold">30 USD</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="text-center" style="width: 26rem;">
+                        <a href=""><img src="./ceramics_2.webp" class="img-fluid" alt="Silver Set"></a>
+                        <div>
+                            <h5 class="mb-1">Silver Set</h5>
+                            <p class="fw-bold">40 USD</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="text-center" style="width: 26rem;">
+                        <a href=""><img src="./ceramics_2.webp" class="img-fluid" alt="Workshop"></a>
+                        <div>
+                            <h5 class="mb-1">Workshops for adults</h5>
+                            <p class="fw-bold">210 USD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- best sellers section end -->
+     
+    <!-- New collection -->
+    <section class="new-collection w-100 bg-secondary-subtle py-5">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-12 col-lg-6 col-md-6">
+                  <h2 class="fw-bold mb-3">New collection</h2>
+                  <p class="mb-3 fs-6 text-start pe-3 me-auto align-self-start text-grey">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere.
+                      Praesent congue dui nec lectus tincidunt elementum. Donec viverra a neque vel egestas. Ut quis urna orci.
+                  </p>
+                  <button class="btn btn-danger text-white px-4 mb-3 py-2">More</button>
+              </div>
+              <div class="col-12 col-lg-6 col-md-6">
+                  <div class="d-flex gap-3">
+                      <div class="d-flex flex-column gap-3">
+                          <img src="./ceramics_2.webp" class="img-fluid col-md-12 w-100" alt="Small Image 1">
+                          <img src="./ceramics_2.webp" class="img-fluid col-md-6 w-100" alt="Small Image 2">
+                      </div>
+                      <div>
+                          <img src="./ceramics_2.webp" class="img-fluid col-md-6 w-100 h-100" alt="Large Image">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <!-- new collection end -->
+
+  <!-- workshop -->
+  <section class="workshop w-100 py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-12 col-lg-6 col-md-6 order-last order-md-first order-lg-first order-sm-last text-center">
+                <img src="./Workshop_4 (1).webp" class="img-fluid w-75 h-50 h-lg-75 h-md-75 mx-auto d-block" alt="Workshop Image">
+            </div>
+            
+            <!-- Text Section -->
+            <div class="col-12 col-lg-6 col-md-6 text-start order-first order-sm-first order-md-last order-lg-last  p-5">
+                <h2 class="fw-bold mb-3">Workshops</h2>
+                <p class="mb-3 mx-auto fs-6 text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere.
+                    Praesent congue dui nec lectus tincidunt elementum. Donec viverra a neque vel egestas. Ut quis urna orci.
+                    Nullam sollicitudin est et quam rhoncus, nec imperdiet sem efficitur. Etiam aliquam posuere hendrerit. 
+                    Curabitur egestas sed nisl rhoncus finibus.
+                </p>
+                <button class="btn btn-danger text-white px-4 py-2">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- workshop end -->
+
+   <!-- employee -->
+   <section class="py-5 bg-secondary-subtle text-center text-grey">
+    <div class="container">
+        <h2 class="fw-bold mb-5">Our employees</h2>
+        <div class="row justify-content-center g-5 p-5">
+           
+            <div class="col-12 col-md-4">
+                <div class="d-flex flex-column align-items-center">
+                    <i class="bi bi-person-circle display-3"></i>
+                    <h5 class="my-3">Hemalatha</h5>
+                    <p class="fs-6 text-center" >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4">
+                <div class="d-flex flex-column align-items-center">
+                    <i class="bi bi-person-circle display-3"></i>
+                    <h5 class="my-3">Sanjay C</h5>
+                    <p class="text-center fs-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere.
+                    </p>
+                </div>
+            </div>
+           
+            <div class="col-12 col-md-4">
+                <div class="d-flex flex-column align-items-center">
+                    <i class="bi bi-person-circle display-3"></i>
+                    <h5 class="my-3">Varshini C</h5>
+                    <p class="text-center fs-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- employee end -->
+     <!-- photos -->
+     <section class="photo-section p-5">
+      <div class="container " style="max-width: 900px; ">
+          <div class="row g-2 vh-50 align-items-center justify-content-center">
+                           
+              <div class="col-6">
+                  <img src="./1.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Large Image">
+              </div>
+  
+              <div class="col-6">
+                  <div class="row g-2">
+            
+                      <div class="col-12">
+                          <img src="./2.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Top Right Image">
+                      </div>
+  
+                      <div class="col-6">
+                          <img src="./3.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Small Image 1">
+                      </div>
+                      <div class="col-6">
+                          <img src="./4.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="Small Image 2">
+                      </div>
+  
+                  </div>
+              </div>
+  
+          </div>
+      </div>
+  </section>
+      <!--  photos end -->
+
+
+        <!-- story -->
+        <section class="story-section text-start text-white">
+          <div class="container-fluid h-100">
+              <div class="row h-100 align-items-center">
+                  <div class="col-12 col-md-6">
+                      <div class="p-4">
+                          <h1 class="fw-bolder mx-lg-5 mx-md-5 mx-auto mb-3">Our Story</h1>
+                          <p class="fs-4 mx-lg-5 mx-md-5 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos ipsam impedit iste illo, nemo necessitatibus nesciunt excepturi atque hic.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, non.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda recusandae, est libero enim laudantium eum reiciendis labore quod consectetur explicabo.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+         <!-- story end -->
+
+     <!-- footer section -->
+     <footer class="bg-dark text-white p-4 fs-6">
+      <div class="container-fluid w-100 my-5 text-center ">
+        <div class="row g-2 d-flex flex-column flex-lg-row flex-md-row justify-content-center align-items-center">
+          <div class="col-12 col-lg-2 col-md-2">
+            <p>Adress: 573201 </p>
+            <p>Karnataka India</p>
+          </div>
+          <div class="col-12 col-lg-2 col-md-2">
+            <p>email@gmail.com</p>
+            <p>+0000000000</p>
+          </div>
+          <div class="col-12 col-lg-2 col-md-2 ">
+            <p><a href="#" class="text-white text-decoration-none">Store regulations</a></p>
+            <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+          </div>
+          <div class="col-12 col-lg-2 col-md-2">
+            <p><a href="#" class="text-white text-decoration-none">Delivery</a></p>
+            <p><a href="#" class="text-white text-decoration-none">Returns & Exchanges</a></p>
+          </div>
+          <div class="col-12 col-lg-2 col-md-2 d-flex align-items-center justify-content-center text-white">
+            <i class="fa-brands fa-facebook col-2"></i>
+            <i class="fa-brands fa-twitter col-2"></i>
+            <i class="fa-brands fa-instagram col-2"></i>
+          </div>
+        </div>
+      </div>
+      
+     </footer>
+    <div class="container-fluid bg-secondary-subtle d-flex justify-content-center fs-6">
+      <p>A website designed by @VARSHA.</p>
+  </div>
+     
+     <!-- footer end -->
+
+
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero-section {
+    height: 80vh;
+    background-image: url(./main.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  
+  .hero-section .hero-heading {
+    font-size: 4rem; 
+    text-align: center;
+  }
+  
+  
+  .hero-section .hero-btn {
+    border-radius: 0px;
+    padding: 10px 40px;
+  }
+  .story-section{
+    height: 80vh;
+    background: rgb(222,226,233);
+    background: radial-gradient(circle, rgba(222,226,233,1) 0%, rgba(7,14,31,0.7596288515406162) 0%), url(./story.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .shop-section{
+    height: 30vh;
+    background: rgb(222,226,233);
+    background: radial-gradient(circle, rgba(222,226,233,1) 0%, rgba(7,14,31,0.7596288515406162) 0%), url(./blog.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .work-section{
+    height: 40vh;
+    background-image: url(./blog.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .blg-section img{
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  .blg-section img:hover{
+    transform: scale(0.9);
+    /* opacity: 0.8; */
+  }
+  .contact-section{
+    height: 30vh;
+    background: rgb(222,226,233);
+    background: radial-gradient(circle, rgba(222,226,233,1) 0%, rgba(7,14,31,0.7596288515406162) 0%), url(./story.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
